@@ -39,6 +39,7 @@ From the results of Bi-LSTM and Bi-GRU with attention mechanism, attention layer
 From the results of Bi-LSTM with glove embedding and Bi-LSTM with four embeddings, the input vector of 1200 dimensions contains more information than input vector of 300 dimensions and thus Bi-LSTM with four embeddings gets higher score.
 ## Effectiv eness of blending models
 Different models on the same data set have different deviations and blending different models might neutralize different deviations. In the project, blending different models by linear blend has better performance than single model, while blending different models with feedforward neural network does not because of overfitting.
+![image](https://github.com/ZhixinLai/IRLS-for-Logistic-Regression/blob/master/images/8.png)
 
 ## References
 [1] Y. Kim. Convolutional neural networks for sentence classification[C]. Conference on Empirical Methods in Natural
