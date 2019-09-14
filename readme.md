@@ -43,9 +43,8 @@ Different models on the same data set have different deviations and blending dif
 ![image](images/2.png)
 
 ## References
-[1] Y. Kim. Convolutional neural networks for sentence classification[C]. Conference on Empirical Methods in Natural
-Language Processing, 2014: 17461751.
-[2] Hochreiter S, Schmidhuber, Jürgen. Long Short-Term Memory[J]. Neural Computation, 1997, 9(8):1735-1780.
-[3] Cho K, Van Merrienboer B, et al. Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation[J]. Computer Science, 2014.
-[4] Schuster M, Paliwal K K. Bidirectional recurrent neural networks[M]. 1997.
-[5] Jan K Chorowski, Dzmitry Bahdanau, et al. Attention-based models for speech recognition[J]. Advances in Neural Information Processing Systems, 2015: 577585.
+[1] Y. Kim. Convolutional neural networks for sentence classification[C]. Conference on Empirical Methods in Natural Language Processing, 2014: 17461751.  
+[2] Hochreiter S, Schmidhuber, Jürgen. Long Short-Term Memory[J]. Neural Computation, 1997, 9(8):1735-1780.  
+[3] Cho K, Van Merrienboer B, et al. Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation[J]. Computer Science, 2014.  
+[4] Schuster M, Paliwal K K. Bidirectional recurrent neural networks[M]. 1997.  
+[5] Jan K Chorowski, Dzmitry Bahdanau, et al. Attention-based models for speech recognition[J]. Advances in Neural Information Processing Systems, 2015: 577585.  
