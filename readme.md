@@ -24,10 +24,16 @@ fully connected layers with dropout, and get the public score of 0.660.
 [Bi-GRU] The principle of Bidirectional GRU(Bi-GRU) is the same as Bi-LSTM. We subsitute the LSTM layers
 in Bi-LSTM based model with GRU layers and get the public score of 0.655.
 ## Attention Mechanism  
-
+Without Attention Mechanism, machine reads the whole sentence equally and compresses all information into a fixlength vector. The idea of Attention Mechanism enalbles machine to capture keywords and reweight hidden layer[5]. Here, we combine the Bi-LSTM and Bi-GRU with attension layer seperately and get the public score of 0.670 and 0.671 respectively.
 ## Different embeddings and their combination  
-
+Embedding is used to transform word to vector. Google-News, Glove, Paragram and Wiki are provided in the kernel of Kaggle. Among those four embeddings, we focus on Glove. Besides, We try to combine four embeddings to generate 1200 dimensional vector by connecting 4 vectors of 300 dimensions. The public scores of Bi-LSTM with attention layer and four embeddings is 0.682.
 ## Blending different models  
-
-
+We blend different models together, including CNN, Bi- LSTM with attension layer, Bi-LSTM with average pooling and maxpooling, Bi-GRU with attension layer, Bi-GRU with average pooling and maxpooling. We use two methods of blending,the linear blend and neural network stacking.
+We use the outputs of five models to retrain a linear regression. The public scores of linear blend is 0.690. We also use outputs of five models to train a feedforward neural network with one 64-units hidden layer. However, the public scores of neural network stacking is 0.665 and overfitting problem may lead to the bad performance.
 # Summary and conclusions  
+## Comparison of different models 
+CNN has achieved excellent result in the project, but RNN performs better because RNN could capture long-distance dependency information. In the project, the performance of LSTM is close to the performance of GRU. Bi-GRU and Bi-LSTM have better performance than GRU and LSTM respectively, because BRNN accomplishes training simultaneously in both positive and negative time directions.
+## Effectiveness of attention mechanism 
+From the results of Bi-LSTM and Bi-GRU with attention mechanism, attention layer helps improve the model’s performance, because it would reweight the hidden layer and emphasize the important information
+## Different Embeddings combination 
+From the results of Bi-LSTM with glove embedding and Bi-LSTM with four embeddings, the input vector of 1200 dimensions contains more information than input vector of 300 dimensions and thus Bi-LSTM with four embeddings gets higher score.
