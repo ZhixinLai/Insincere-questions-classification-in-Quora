@@ -37,3 +37,13 @@ CNN has achieved excellent result in the project, but RNN performs better becaus
 From the results of Bi-LSTM and Bi-GRU with attention mechanism, attention layer helps improve the model’s performance, because it would reweight the hidden layer and emphasize the important information
 ## Different Embeddings combination 
 From the results of Bi-LSTM with glove embedding and Bi-LSTM with four embeddings, the input vector of 1200 dimensions contains more information than input vector of 300 dimensions and thus Bi-LSTM with four embeddings gets higher score.
+## Effectiv eness of blending models
+Different models on the same data set have different deviations and blending different models might neutralize different deviations. In the project, blending different models by linear blend has better performance than single model, while blending different models with feedforward neural network does not because of overfitting.
+
+## References
+[1] Y. Kim. Convolutional neural networks for sentence classification[C]. Conference on Empirical Methods in Natural
+Language Processing, 2014: 17461751.
+[2] Hochreiter S, Schmidhuber, Jürgen. Long Short-Term Memory[J]. Neural Computation, 1997, 9(8):1735-1780.
+[3] Cho K, Van Merrienboer B, et al. Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation[J]. Computer Science, 2014.
+[4] Schuster M, Paliwal K K. Bidirectional recurrent neural networks[M]. 1997.
+[5] Jan K Chorowski, Dzmitry Bahdanau, et al. Attention-based models for speech recognition[J]. Advances in Neural Information Processing Systems, 2015: 577585.
