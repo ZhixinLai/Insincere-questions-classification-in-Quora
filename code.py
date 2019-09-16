@@ -19,8 +19,6 @@ from keras.engine.topology import Layer
 from keras import initializers, regularizers, constraints, optimizers, layers
 
 
-
-
 embed_size = 1200
 max_features = 95000 
 maxlen = 70 
