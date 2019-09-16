@@ -68,7 +68,6 @@ val_y = val_df['target'].values
 np.random.seed(2019)
 trn_idx = np.random.permutation(len(train_X))
 val_idx = np.random.permutation(len(val_X))
-
 train_X = train_X[trn_idx]
 val_X = val_X[val_idx]
 train_y = train_y[trn_idx]
