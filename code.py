@@ -74,7 +74,6 @@ val_X = val_X[val_idx]
 train_y = train_y[trn_idx]
 val_y = val_y[val_idx]    
 
-
 def check_the_word(train,test,embeddings_index):
     new_embeddings_index={}
     for i in tqdm(train):
